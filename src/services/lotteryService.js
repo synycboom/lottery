@@ -10,3 +10,9 @@ const httpRequest = axios.create({
 export const addLottery = async () => {
   await httpRequest.post('/lottery/new');
 };
+
+export const getInventory = async () => {
+  const { data: { data } } = await httpRequest.get('/lottery');
+
+  return data;
+};
