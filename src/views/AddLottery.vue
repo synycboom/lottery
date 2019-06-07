@@ -1,10 +1,10 @@
 <template>
   <div class="add-lottery">
-    <h1>เพิ่มล็อตเตอร์รี่</h1>
+    <h1>เพิ่มสลากกินแบ่งรัฐบาล</h1>
     <b-tabs v-model="activeTab">
       <b-tab-item label="กรอกเอง">
         <section>
-          <b-field label="เลขล็อตเตอร์รี่">
+          <b-field label="เลขสลากกินแบ่งรัฐบาล">
             <b-input v-model="number"></b-input>
           </b-field>
 
@@ -12,7 +12,7 @@
             <b-input v-model="period"></b-input>
           </b-field>
 
-          <b-field label="serial number">
+          <b-field label="Serial Number">
             <b-input v-model="serial"></b-input>
           </b-field>
 
@@ -67,7 +67,7 @@ export default {
     file() {
       setTimeout(() => {
         this.$toast.open({
-          message: 'ระบบของเราทำการเพิ่มล็อตเตอร์รี่ให้แล้วจ้าาา',
+          message: 'ระบบของเราทำการเพิ่มสลากกินแบ่งรัฐบาลให้แล้วจ้าาา',
           type: 'is-success',
         });
       }, 1000);
@@ -80,7 +80,7 @@ export default {
       try {
         await addLottery();
         this.$toast.open({
-          message: 'บันทึกล็อตเตอร์รี่สำเร็จแล้วจ้าาาา',
+          message: 'บันทึกสลากกินแบ่งรัฐบาลสำเร็จแล้วจ้าาาา',
           type: 'is-success',
         });
       } catch (error) {
