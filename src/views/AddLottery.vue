@@ -8,8 +8,12 @@
             <b-input v-model="number"></b-input>
           </b-field>
 
-          <b-field label="เลขงวด">
+          <b-field label="งวดที่">
             <b-input v-model="period"></b-input>
+          </b-field>
+
+          <b-field label="ชุดที่">
+            <b-input v-model="setNumber"></b-input>
           </b-field>
 
           <b-field label="Serial Number">
@@ -61,6 +65,7 @@ export default {
       number: '',
       period: '',
       serial: '',
+      setNumber: '',
     };
   },
   watch: {
