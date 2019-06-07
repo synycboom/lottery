@@ -36,7 +36,11 @@ export default {
   async mounted() {
     try {
       const data = await getInventory();
-      this.data = data;
+      this.data = data.map(item => ({
+        number: item.number.substring(0, 6),
+        period: item.period,
+        set: parseInt(item.number.substring(0, 2)),
+      }));
     } catch (error) {
       console.error(error);
       this.$toast.open({
