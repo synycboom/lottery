@@ -16,7 +16,7 @@ export default {
       columns: [
         {
           field: 'number',
-          label: 'เลขสลากกินแบ่งรัญบาล',
+          label: 'เลขสลากกินแบ่งรัฐบาล',
           width: '40',
         },
         {
