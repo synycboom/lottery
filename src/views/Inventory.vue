@@ -24,6 +24,11 @@ export default {
           label: 'เลขงวด',
           width: '40',
         },
+        {
+          field: 'set',
+          label: 'เลขชุด',
+          width: '40',
+        },
       ],
       data: [],
     };
